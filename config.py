@@ -14,13 +14,13 @@ from logging.handlers import RotatingFileHandler
 
 
 
-TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "")
-APP_ID = int(os.environ.get("APP_ID", ""))
-API_HASH = os.environ.get("API_HASH", "")
+TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "7438884533:AAGcwQr_aC9UHDkMnJTeHYSstMet3XkoCtQ")
+APP_ID = int(os.environ.get("APP_ID", "26254064"))
+API_HASH = os.environ.get("API_HASH", "72541d6610ae7730e6135af9423b319c")
 
 
-OWNER = os.environ.get("OWNER", "") #Owner username
-OWNER_ID = int(os.environ.get("OWNER_ID", "")) #Owner user id
+OWNER = os.environ.get("OWNER", "Bʀᴏᴏᴋ") #Owner username
+OWNER_ID = int(os.environ.get("OWNER_ID", "5296584067")) #Owner user id
 DB_URL = os.environ.get("DB_URL", "")
 DB_NAME = os.environ.get("DB_NAME", "madflixbotz")
 
