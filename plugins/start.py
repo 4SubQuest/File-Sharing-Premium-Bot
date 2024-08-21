@@ -21,7 +21,7 @@ from database.database import add_user, del_user, full_userbase, present_user
 
 # add time im seconds for waitingwaiting before delete 
 # 1 minutes = 60, 2 minutes = 60×2=120, 5 minutes = 60×5=300
-SECONDS = int(os.getenv("SECONDS", "604800"))
+SECONDS = int(os.getenv("SECONDS", "3600"))
 
 
 
@@ -93,7 +93,7 @@ async def start_command(client: Client, message: Message):
 
             except:
                 pass
-        k = await client.send_message(chat_id = message.from_user.id, text=f"Tʜɪs ғɪʟᴇs ᴡɪʟʟ ʙᴇ ʀᴇᴍᴏᴠᴇᴅ ɪɴ 7 ᴅᴀʏs ʏᴏᴜ ᴄᴀɴ sᴀᴠᴇ ɪᴛ ᴏᴛʜᴇʀ ᴄʜᴀᴛs ᴏʀ ᴊᴏɪɴ ᴀɴɪᴍᴇ ǫᴜᴇsᴛ ᴄʜᴀɴɴᴀʟ ᴛᴏ ɢᴇᴛ ғɪʟᴇs ᴀɢᴀɪɴ")
+        k = await client.send_message(chat_id = message.from_user.id, text=f"ᴛʜɪs ғɪʟᴇ ᴡɪʟʟ ʙᴇ ᴅᴇʟᴇᴛᴇᴅ ғʀᴏᴍ ʜᴇʀᴇ ᴡɪᴛʜɪɴ 1 ʜᴏᴜʀ sᴀᴠᴇ sᴏᴍᴇᴡʜᴇʀᴇ ᴇʟsᴇ.")
         await asyncio.sleep(SECONDS)
         await f.delete()
         await k.edit_text("Yᴏᴜʀ ғɪʟᴇs ɪs ᴀʟʀᴇᴀᴅʏ ʀᴇᴍᴏᴠᴇᴅ! ɢᴇᴛ ғɪʟᴇs ғʀᴏᴍ @AnimeQuestX")
